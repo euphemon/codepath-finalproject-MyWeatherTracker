@@ -72,13 +72,8 @@ There will be 2 screens in total excluding the launch screen.
 **Note**: Once the user enters the city name in the search bar, the app will move back to the home screen but instead of displaying its current city's weather information it will display the searched city's weather information.
 
 ## Wireframes
+![app_wireframe](https://github.com/euphemon/codepath-finalproject-MyWeatherTracker/assets/60558886/041b1c92-b638-4f44-9686-c02be3091ee2)
 
-[Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
-
-### [BONUS] Digital Wireframes & Mockups
-
-### [BONUS] Interactive Prototype
 
 ## Schema 
 
