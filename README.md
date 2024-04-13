@@ -81,7 +81,7 @@ There will be 2 screens in total excluding the launch screen.
 - [ ] Sprint 3: Complete the search functionlity of the search page
 - [ ] Sprint 4: Finalize the storyboard design
 
-## Video Demo
+## Week 8 Video Demo
 <div>
     <a href="https://www.loom.com/share/7a1959312fc243d29a6fec4460e2ddf2">
     </a>
