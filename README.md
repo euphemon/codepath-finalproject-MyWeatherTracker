@@ -75,6 +75,13 @@ There will be 2 screens in total excluding the launch screen.
 ![app_wireframe](https://github.com/euphemon/codepath-finalproject-MyWeatherTracker/assets/60558886/041b1c92-b638-4f44-9686-c02be3091ee2)
 
 
+## Sprint
+- [ ] Sprint 1: Set up the project and complete the initial storybaord design
+- [ ] Sprint 2: Add view controller and complete the functionaility of the GPS tracking
+- [ ] Sprint 3: Complete the search functionlity of the search page
+- [ ] Sprint 4: Finalize the storyboard design 
+
+
 ## Schema 
 
 [This section will be completed in Unit 9]
