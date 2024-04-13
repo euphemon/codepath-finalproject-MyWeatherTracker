@@ -79,8 +79,16 @@ There will be 2 screens in total excluding the launch screen.
 - [ ] Sprint 1: Set up the project and complete the initial storybaord design
 - [ ] Sprint 2: Add view controller and complete the functionaility of the GPS tracking
 - [ ] Sprint 3: Complete the search functionlity of the search page
-- [ ] Sprint 4: Finalize the storyboard design 
+- [ ] Sprint 4: Finalize the storyboard design
 
+## Video Demo
+<div>
+    <a href="https://www.loom.com/share/7a1959312fc243d29a6fec4460e2ddf2">
+    </a>
+    <a href="https://www.loom.com/share/7a1959312fc243d29a6fec4460e2ddf2">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/7a1959312fc243d29a6fec4460e2ddf2-with-play.gif">
+    </a>
+  </div>
 
 ## Schema 
 
