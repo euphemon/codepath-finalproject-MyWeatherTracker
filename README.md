@@ -1,8 +1,6 @@
 Original App Design Project
 ===
 
-**open Weather.xcworkspace file to correctly run the project** 
-
 # My Weather Tracker
 
 ## Table of Contents
