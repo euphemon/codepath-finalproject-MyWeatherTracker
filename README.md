@@ -44,7 +44,7 @@ Original App Design Project
 
 ### 2. Screen Archetypes
 
-- [ ] [Launch Screen]
+- [X] [Launch Screen]
 * Weather themed background image
 * App title
 - [ ] [Home Screen]
@@ -65,9 +65,9 @@ Original App Design Project
 **Flow Navigation** (Screen to Screen)
 There will be 2 screens in total excluding the launch screen.
 
-- [ ] [Home Screen]
+- [X] [Home Screen]
 * => Search Screen
-- [ ] [Search Screen]
+- [X] [Search Screen]
 * => Home Screen
 **Note**: Once the user enters the city name in the search bar, the app will move back to the home screen but instead of displaying its current city's weather information it will display the searched city's weather information.
 
@@ -76,7 +76,7 @@ There will be 2 screens in total excluding the launch screen.
 
 
 ## Sprint
-- [ ] Sprint 1: Set up the project and complete the initial storybaord design
+- [X] Sprint 1: Set up the project and complete the initial storybaord design
 - [ ] Sprint 2: Add view controller and complete the functionaility of the GPS tracking
 - [ ] Sprint 3: Complete the search functionlity of the search page
 - [ ] Sprint 4: Finalize the storyboard design
@@ -89,6 +89,17 @@ There will be 2 screens in total excluding the launch screen.
       <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/7a1959312fc243d29a6fec4460e2ddf2-with-play.gif">
     </a>
   </div>
+  
+## User Feature Completed
+- [X] Launch Screen Design
+- [X] Home Screen Design
+- [X] Search Screen Design 
+
+## Week 8 Reflection On Progress
+I was able to create a basic storyboard for the project. I completed the launch screen, home screen, and the search screen. 
+The challenges that I have faced with using the right constraints for auto layout. Sometimes when I add my constraints I would see the yellow lines on the screen which means the system is telling me something is off. I was able to fix all the issues and made sure the constrains worked for all other iphone types.
+Next will be adding the GPS and search functionaility to different screens. 
+If time allows, I'd like to make the storyboard look better, like changing the colors and fonts. 
 
 ## Schema 
 
