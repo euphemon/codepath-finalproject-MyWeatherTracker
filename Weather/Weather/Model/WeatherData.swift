@@ -10,4 +10,6 @@ import Foundation
 class Weather {
     var temp = " "
     var city = " "
+    var tempMin = " "
+    var tempMax = " "
 }

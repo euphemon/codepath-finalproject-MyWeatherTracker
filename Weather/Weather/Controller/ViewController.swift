@@ -15,6 +15,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, SearchViewCon
     @IBOutlet weak var tempLabel: UILabel!
     @IBOutlet weak var iconImageView: UIImageView!
     @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var tempMinLabel: UILabel!
+    @IBOutlet weak var tempMaxLabel: UILabel!
     
     let locationManager = CLLocationManager()
     let weather = Weather()
@@ -38,16 +40,40 @@ class ViewController: UIViewController, CLLocationManagerDelegate, SearchViewCon
         AF.request("https://api.openweathermap.org/data/2.5/weather?lat=\(lat)&lon=\(lon)&units=imperial&appid=\(apiKey)").responseJSON { response in
             if let data = response.value {
                 let weatherJSON = JSON(data)
+                //print(weatherJSON)
                 //print(weatherJSON["main"]["temp"])
                 //print(weatherJSON["name"])
                 self.weather.temp = "\(Int(round(weatherJSON["main"]["temp"].doubleValue)))˚F"
-                self.weather.city = "\(weatherJSON["name"].stringValue)"
+                self.weather.tempMin = "\(Int(round(weatherJSON["main"]["temp_min"].doubleValue)))˚F"
+                self.weather.tempMax = "\(Int(round(weatherJSON["main"]["temp_max"].doubleValue)))˚F"
+                self.weather.city = "\(weatherJSON["name"].stringValue)".uppercased()
+                
+                //update the labels on the screen
                 self.tempLabel.text = self.weather.temp
                 self.locationLabel.text = self.weather.city
-                //for random image display
-                let randomNumber = Int.random(in: 1...26)
-                let imageName = "\(randomNumber).png" 
-                //self.iconImageView.image = UIImage(named: imageName)
+                self.tempMinLabel.text = "Min: \(self.weather.tempMin)"
+                self.tempMaxLabel.text = "Max: \(self.weather.tempMax)"
+                
+                //update weather icons
+                let weatherDescription = weatherJSON["weather"][0]["main"].stringValue
+                print(weatherDescription)
+                switch weatherDescription {
+                case "Thunderstorm":
+                    self.iconImageView.image = UIImage(named: " 10.png")
+                case "Drizzle":
+                    self.iconImageView.image = UIImage(named: " 5.png")
+                case "Rain":
+                    self.iconImageView.image = UIImage(named: " 6.png")
+                case "Snow":
+                    self.iconImageView.image = UIImage(named: " 15.png")
+                case "Clear":
+                    self.iconImageView.image = UIImage(named: " 1.png")
+                case "Clouds":
+                    self.iconImageView.image = UIImage(named: " 3.png")
+                default:
+                    self.iconImageView.image = UIImage(named: " 12.png")
+                    break
+                }
             }
             else {
                 print("API Failed")
@@ -81,13 +107,35 @@ class ViewController: UIViewController, CLLocationManagerDelegate, SearchViewCon
                 let weatherJSON = JSON(data)
                 
                 self.weather.temp = "\(Int(round(weatherJSON["main"]["temp"].doubleValue)))˚F"
-                self.weather.city = "\(weatherJSON["name"].stringValue)"
+                self.weather.city = "\(weatherJSON["name"].stringValue)".uppercased()
+                self.weather.tempMin = "\(Int(round(weatherJSON["main"]["temp_min"].doubleValue)))˚F"
+                self.weather.tempMax = "\(Int(round(weatherJSON["main"]["temp_max"].doubleValue)))˚F"
+                
+                //update labels
                 self.tempLabel.text = self.weather.temp
                 self.locationLabel.text = self.weather.city
-                //for random image display
-                let randomNumber = Int.random(in: 1...26)
-                let imageName = "\(randomNumber).png"
-                self.iconImageView.image = UIImage(named: imageName)
+                self.tempMinLabel.text = "Min: \(self.weather.tempMin)"
+                self.tempMaxLabel.text = "Max: \(self.weather.tempMax)"
+                
+                //update weather icons
+                let weatherDescription = weatherJSON["weather"][0]["main"].stringValue
+                print(weatherDescription)
+                switch weatherDescription {
+                case "Thunderstorm":
+                    self.iconImageView.image = UIImage(named: " 10.png")
+                case "Drizzle":
+                    self.iconImageView.image = UIImage(named: " 5.png")
+                case "Rain":
+                    self.iconImageView.image = UIImage(named: " 6.png")
+                case "Snow":
+                    self.iconImageView.image = UIImage(named: " 15.png")
+                case "Clear":
+                    self.iconImageView.image = UIImage(named: " 1.png")
+                case "Clouds":
+                    self.iconImageView.image = UIImage(named: " 3.png")
+                default:
+                    self.iconImageView.image = UIImage(named: " 12.png")
+                }
             }
             else {
                 print("API Failed")
