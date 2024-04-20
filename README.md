@@ -2,6 +2,7 @@ Original App Design Project
 ===
 
 # My Weather Tracker
+** Make sure you open the Weather.xcworkspace file to start the Xcode application **
 
 ## Table of Contents
 
@@ -77,8 +78,8 @@ There will be 2 screens in total excluding the launch screen.
 
 ## Sprint
 - [X] Sprint 1: Set up the project and complete the initial storybaord design
-- [ ] Sprint 2: Add view controller and complete the functionaility of the GPS tracking
-- [ ] Sprint 3: Complete the search functionlity of the search page
+- [X] Sprint 2: Add view controller and complete the functionaility of the GPS tracking
+- [X] Sprint 3: Complete the search functionlity of the search page
 - [ ] Sprint 4: Finalize the storyboard design
 
 ## Week 8 Video Demo
@@ -103,14 +104,18 @@ If time allows, I'd like to make the storyboard look better, like changing the c
 
 ## Schema 
 
-[This section will be completed in Unit 9]
-
 ### Models
 
-[Add table of models]
+WeatherData.swift
+class Weather {
+    var temp = " "
+    var city = " "
+    var tempMin = " "
+    var tempMax = " "
+    var description = " "
+}
 
 ### Networking
 
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+- Current weather API from OpenWeather
+- https://api.openweathermap.org/data/2.5/weather?lat=\(lat)&lon=\(lon)&units=imperial&appid=\(apiKey)
