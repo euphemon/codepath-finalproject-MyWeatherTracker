@@ -107,6 +107,7 @@ If time allows, I'd like to make the storyboard look better, like changing the c
 ### Models
 
 WeatherData.swift
+**
 class Weather {
     var temp = " "
     var city = " "
@@ -114,6 +115,7 @@ class Weather {
     var tempMax = " "
     var description = " "
 }
+**
 
 ### Networking
 
