@@ -17,6 +17,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, SearchViewCon
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var tempMinLabel: UILabel!
     @IBOutlet weak var tempMaxLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
     
     let locationManager = CLLocationManager()
     let weather = Weather()
@@ -47,12 +49,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate, SearchViewCon
                 self.weather.tempMin = "\(Int(round(weatherJSON["main"]["temp_min"].doubleValue)))˚F"
                 self.weather.tempMax = "\(Int(round(weatherJSON["main"]["temp_max"].doubleValue)))˚F"
                 self.weather.city = "\(weatherJSON["name"].stringValue)".uppercased()
+                self.weather.description = "\(weatherJSON["weather"][0]["description"].stringValue)"
                 
                 //update the labels on the screen
                 self.tempLabel.text = self.weather.temp
                 self.locationLabel.text = self.weather.city
                 self.tempMinLabel.text = "Min: \(self.weather.tempMin)"
                 self.tempMaxLabel.text = "Max: \(self.weather.tempMax)"
+                self.descriptionLabel.text = "\(self.weather.description)"
                 
                 //update weather icons
                 let weatherDescription = weatherJSON["weather"][0]["main"].stringValue
@@ -110,12 +114,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate, SearchViewCon
                 self.weather.city = "\(weatherJSON["name"].stringValue)".uppercased()
                 self.weather.tempMin = "\(Int(round(weatherJSON["main"]["temp_min"].doubleValue)))˚F"
                 self.weather.tempMax = "\(Int(round(weatherJSON["main"]["temp_max"].doubleValue)))˚F"
+                self.weather.description = "\(weatherJSON["weather"][0]["description"].stringValue)"
                 
                 //update labels
                 self.tempLabel.text = self.weather.temp
                 self.locationLabel.text = self.weather.city
                 self.tempMinLabel.text = "Min: \(self.weather.tempMin)"
                 self.tempMaxLabel.text = "Max: \(self.weather.tempMax)"
+                self.descriptionLabel.text = "\(self.weather.description)"
                 
                 //update weather icons
                 let weatherDescription = weatherJSON["weather"][0]["main"].stringValue

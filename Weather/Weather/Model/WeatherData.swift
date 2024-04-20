@@ -12,4 +12,5 @@ class Weather {
     var city = " "
     var tempMin = " "
     var tempMax = " "
+    var description = " "
 }
