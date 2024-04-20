@@ -67,6 +67,12 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y6d-ee-q5a">
+                                <rect key="frame" x="80.666666666666671" y="633.33333333333337" width="231.66666666666663" height="35.666666666666629"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
+                                <color key="textColor" name="CustomLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="0.78431372549019607" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -80,10 +86,12 @@
                             <constraint firstItem="WRK-51-T6W" firstAttribute="top" secondItem="QgP-wq-mlY" secondAttribute="bottom" constant="70" id="HzN-4e-FpI"/>
                             <constraint firstItem="QgP-wq-mlY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="LeJ-0q-3Zv"/>
                             <constraint firstAttribute="trailing" secondItem="Zi3-A2-QEX" secondAttribute="trailing" id="OKU-VZ-ekj"/>
+                            <constraint firstItem="Y6d-ee-q5a" firstAttribute="top" secondItem="WRK-51-T6W" secondAttribute="bottom" constant="1" id="RVU-3n-HWL"/>
                             <constraint firstItem="IWU-vf-RnU" firstAttribute="top" secondItem="QgP-wq-mlY" secondAttribute="bottom" constant="10" id="U24-l9-3xd"/>
                             <constraint firstItem="Gnp-LL-5hz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="aVS-Aw-9an"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2K8-mx-c1p" secondAttribute="trailing" symbolic="YES" id="euF-j7-72d"/>
                             <constraint firstItem="Gnp-LL-5hz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="kBe-qF-EH6"/>
+                            <constraint firstItem="Y6d-ee-q5a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="srd-p0-iXz"/>
                             <constraint firstAttribute="bottom" secondItem="Zi3-A2-QEX" secondAttribute="bottom" id="tcx-yW-7OB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QgP-wq-mlY" secondAttribute="trailing" constant="24" id="tif-K3-zhE"/>
                             <constraint firstItem="Zi3-A2-QEX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wcl-X6-Ur1"/>
@@ -91,6 +99,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="descriptionLabel" destination="Y6d-ee-q5a" id="et8-pm-IId"/>
                         <outlet property="iconImageView" destination="WRK-51-T6W" id="g6K-bu-Zrw"/>
                         <outlet property="locationLabel" destination="2K8-mx-c1p" id="fsU-Xz-2qY"/>
                         <outlet property="tempLabel" destination="QgP-wq-mlY" id="rqg-Fu-KRz"/>
