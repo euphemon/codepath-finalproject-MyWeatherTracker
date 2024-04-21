@@ -48,11 +48,11 @@ Original App Design Project
 - [X] [Launch Screen]
 * Weather themed background image
 * App title
-- [ ] [Home Screen]
+- [X] [Home Screen]
 * User can view the current temperature
 * user can view the current city name
 * user can view the weather icon
-- [ ] [Search Screen]
+- [X] [Search Screen]
 * user can search for a specific city
 
 ### 3. Navigation
@@ -80,7 +80,7 @@ There will be 2 screens in total excluding the launch screen.
 - [X] Sprint 1: Set up the project and complete the initial storybaord design
 - [X] Sprint 2: Add view controller and complete the functionaility of the GPS tracking
 - [X] Sprint 3: Complete the search functionlity of the search page
-- [ ] Sprint 4: Finalize the storyboard design
+- [X] Sprint 4: Finalize the storyboard design
 
 ## Week 8 Video Demo
 <div>
@@ -101,6 +101,15 @@ I was able to create a basic storyboard for the project. I completed the launch 
 The challenges that I have faced with using the right constraints for auto layout. Sometimes when I add my constraints I would see the yellow lines on the screen which means the system is telling me something is off. I was able to fix all the issues and made sure the constrains worked for all other iphone types.
 Next will be adding the GPS and search functionaility to different screens. 
 If time allows, I'd like to make the storyboard look better, like changing the colors and fonts. 
+
+## Week 9 Video Demo
+<div>
+    <a href="https://www.loom.com/share/0b16ee3ab4554f36810de150d1709c11">
+    </a>
+    <a href="https://www.loom.com/share/0b16ee3ab4554f36810de150d1709c11">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/0b16ee3ab4554f36810de150d1709c11-with-play.gif">
+    </a>
+  </div>
 
 ## Schema 
 
