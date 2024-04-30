@@ -111,6 +111,16 @@ If time allows, I'd like to make the storyboard look better, like changing the c
     </a>
   </div>
 
+## Week 10 Final Video Demo
+<div>
+    <a href="https://www.loom.com/share/f68f8bd223be4193a082f38a3d563350">
+      <p>Final Demo</p>
+    </a>
+    <a href="https://www.loom.com/share/f68f8bd223be4193a082f38a3d563350">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/f68f8bd223be4193a082f38a3d563350-with-play.gif">
+    </a>
+  </div>
+
 ## Schema 
 
 ### Models
